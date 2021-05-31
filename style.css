@@ -1,0 +1,67 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo-image > img {
+ height: 60px;
+}
+
+.image-cover > img {
+  object-fit: cover;
+}
+
+.border-circle {
+  border-radius: 50%;
+}
+
+/* footer */
+
+.footer {
+  margin-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.footer-badge {
+  position: absolute;
+  top: -66px;
+  left: 0;
+  right: 0;
+}
+
+/* animated clock */
+
+@keyframes spin {
+  100% { transform: rotate(359deg); }
+}
+
+.clock {
+  position: relative;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.clock > span {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  right: 50%;
+  left: 50%;
+  width: 1px;
+  background-color: #f22;
+  transform-origin: top;
+}
+
+.clock-hours {
+  height: 8px;
+  animation: spin 3.0s infinite linear;
+}
+
+.clock-minutes {
+  height: 10px;
+  animation: spin 1.5s infinite linear;
+}

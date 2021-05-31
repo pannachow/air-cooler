@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>AirCooler</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  </head>
+
+  <body>
+    <!-- head -->
+    <header class="is-flex is-justify-content-center pt-2">
+      <figure class="logo-image">
+        <img src="./assets/logo.png" alt="Logo" />
+      </figure>
+    </header>
+
+    <!-- content -->
+    <main class="body container">
+      <div class="tile is-parent is-vertical">
+        <section class="tile is-child notification is-primary">
+          <h1 class="title">Congratulations!</h1>
+          <p class="subtitle has-text-weight-bold">
+            <span class="icon has-text-danger">
+              <i class="fas fa-check-double"></i>
+            </span>
+            <strong class="has-text-weight-bold has-text-danger">
+              Your order has been processed.
+            </strong>
+            The products are on their way.
+          </p>
+        </section>
+
+        <section class="tile is-child notification is-warning">
+          <h1 class="title has-text-white-bis">Meanwhile...</h1>
+          <p class="subtitle has-text-weight-bold">
+            <span class="icon has-text-weight-bold has-text-danger">
+              <i class="fas fa-fire-alt"></i>
+            </span>
+            <strong class="has-text-weight-bold has-text-danger">
+              Bonus Deal For You
+            </strong>
+          </p>
+        </section>
+      </div>
+
+      <!-- row 1 -->
+      <div class="columns is-desktop">
+        <!-- image 1 -->
+        <div class="column">
+          <div class="tags">
+            <span class="tag is-size-2 has-text-warning is-white">
+              <i class="fas fa-thumbs-up"></i>
+            </span>
+            <span
+              class="
+                tag
+                is-hidden-mobile is-warning is-size-4 is-large
+                has-text-weight-bold has-text-white
+              "
+            >
+              Best Seller
+            </span>
+            <span
+              class="tag is-danger is-size-4 is-large has-text-weight-bold mx-4"
+            >
+              Last in Stock!
+            </span>
+          </div>
+          <figure class="image image-cover is-5by4">
+            <img src="./assets/a1.png" alt="AirCooler image" />
+          </figure>
+        </div>
+
+        <!-- air cooler time limit -->
+        <div class="column has-text-centered">
+          <span class="tag is-primary is-size-4 has-text-weight-bold mt-4">
+            LIMITED TIME ONLY
+          </span>
+          <p class="title is-size-2 has-text-danger has-text-weight-bold pt-6">
+            <span id="time"></span>
+            &nbsp;
+            <span class="icon is-medium has-text-danger clock">
+              <span class="clock-hours"></span>
+              <span class="clock-minutes"></span>
+            </span>
+          </p>
+
+          <!-- price -->
+          <strong class="is-size-4">&euro;69.99</strong>
+          <p class="is-size-5">
+            <del>&euro;139,99</del>
+            <strong class="has-text-danger">50% OFF</strong>
+          </p>
+
+          <!-- order today -->
+          <div class="icon-text py-4">
+            <p class="has-text-weight-medium">
+              <span class="icon has-text-info">
+                <i class="fas fa-info"></i>
+              </span>
+              Order today, your package will be delivered
+              <strong>at 18:00</strong>.
+            </p>
+          </div>
+
+          <!-- guaranteed quality -->
+          <div class="icon-text py-4">
+            <p class="has-text-weight-medium">
+              <span class="icon has-text-success">
+                <i class="fas fa-check-square"></i>
+              </span>
+              <strong>Guaranteed Quality</strong>. Enjoy high quality
+              performance cooling.
+            </p>
+          </div>
+
+          <!-- no-hassle returns -->
+          <div class="icon-text py-4">
+            <p class="has-text-weight-medium">
+              <span class="icon has-text-danger">
+                <i class="fas fa-ban"></i>
+              </span>
+              Not satisfied with your product?
+              <strong>Enjoy no-hassle returns</strong>.
+            </p>
+          </div>
+
+          <!-- quick & convenient -->
+          <div class="icon-text py-4">
+            <p class="has-text-weight-medium">
+              <span class="icon has-text-warning">
+                <i class="fas fa-bolt"></i>
+              </span>
+              <strong>Quick & Convenient</strong>. Super easy to setup and
+              simple to use.
+            </p>
+          </div>
+
+          <!-- high demand tag -->
+          <div class="are-large py-4 is-centered">
+            <p class="has-text-danger has-text-weight-bold">
+              <span class="tag is-danger is-medium has-text-weight-bold mx-4">
+                In high demand!
+              </span>
+              Bought 41 times in the last 24 hours
+            </p>
+          </div>
+
+          <!-- 1st buy button -->
+          <div>
+            <a
+              class="
+                button
+                is-primary
+                has-text-centered
+                is-size-5
+                has-text-weight-bold
+              "
+              href="https://www.google.com"
+            >
+              <span class="icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+              <span>Get Your 50% Off Discount Now!</span>
+              <span class="icon">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- row 2 -->
+      <!-- image 2 -->
+      <div class="columns is-desktop">
+        <div class="column">
+          <figure class="image image-cover is-5by4">
+            <img src="./assets/a2.png" alt="AirCooler image" />
+          </figure>
+        </div>
+
+        <!-- image 3 -->
+        <div class="column">
+          <figure class="image image-cover is-5by4">
+            <img src="./assets/a4.png" alt="AirCooler image" />
+          </figure>
+        </div>
+      </div>
+
+      <!-- last buy button -->
+      <div class="card-content">
+        <div class="content has-text-centered pt-6">
+          <a
+            class="button is-primary is-size-4 has-text-weight-semibold"
+            href="https://www.google.com"
+          >
+            <span class="icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+            <span>GRAB YOUR BONUS</span>
+            <span class="icon">
+              <i class="fas fa-shopping-bag"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- decide to leave -->
+      <div class="buttons has-addons is-centered pb-2">
+        <button onclick="openModal()" class="button is-primary is-outlined">
+          I don't want anything, decide to leave.
+        </button>
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p class="image is-4by3">
+            <img src="./assets/leave.png" alt="leaving" />
+          </p>
+        </div>
+        <button
+          onclick="closeModal()"
+          class="modal-close is-large"
+          aria-label="close"
+        ></button>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer has-background-primary is-relative">
+      <div class="has-text-centered footer-badge">
+        <div class="is-flex is-justify-content-center">
+          <div
+            class="
+              is-flex is-justify-content-center
+              has-background-primary
+              border-circle
+            "
+          >
+            <figure class="image is-128x128">
+              <img
+                src="./assets/guarantee.png"
+                alt="100% Satisfaction Guarantee"
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="has-text-warning">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <strong class="is-size-4 has-text-weight-bold has-text-white-bis">
+          100% Satisfaction Guarantee
+        </strong>
+      </div>
+    </footer>
+
+    <script>
+      let counter = 600;
+
+      function setTimeLeft() {
+        const minutes = Math.floor(counter / 60);
+        const seconds = counter % 60;
+        const time = document.getElementById("time");
+        time.innerText = `${minutes} minutes ${seconds} seconds left`;
+      }
+
+      setTimeLeft();
+      setInterval(() => {
+        counter = Math.max(counter - 1, 0);
+        setTimeLeft();
+      }, 1000);
+
+      function openModal() {
+        document.getElementById("modal").classList.add("is-active");
+      }
+
+      function closeModal() {
+        document.getElementById("modal").classList.remove("is-active");
+      }
+    </script>
+  </body>
+</html>
